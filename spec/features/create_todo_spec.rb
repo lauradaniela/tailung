@@ -18,7 +18,7 @@ RSpec.describe "Task management", type: :feature do
     click_on 'Submit'
 
     #Then a new task is created
-    expect(Task.count).to be_one
+    expect(Task.count).to eq 1
 
     #  And the users is redirected to the list of tasks
     expect(current_path).to eq tasks_path
