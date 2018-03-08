@@ -5,7 +5,7 @@ class TasksController < ApplicationController
   end
 
   def new
-    render component: 'tasks/new', props: {}
+    render component: 'tasks/new', props: Task.new
   end
 
   def create
