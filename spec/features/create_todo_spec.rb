@@ -24,7 +24,7 @@ RSpec.describe "Task management", type: :feature do
     expect(current_path).to eq tasks_path
 
     #  And a successful message is rendered
-    expect(page).to have_content("Task created successfuly")
+    expect(page).to have_content("Task created successfully")
   end
 
 end
