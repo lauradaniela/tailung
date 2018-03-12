@@ -25,6 +25,9 @@ RSpec.describe "Task management", type: :feature do
 
     #  And a successful message is rendered
     expect(page).to have_content("Task created successfully")
+
+    #  And the list of created tasks is shown
+    expect(page).to have_content("Mow the lawn")
   end
 
 end

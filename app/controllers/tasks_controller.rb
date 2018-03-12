@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
 
   def index
-    render component: 'tasks/index', props: {tasks: Task.all}
+    render component: 'tasks/index', props: {tasks: Task.all, notice: notice}
   end
 
   def new
