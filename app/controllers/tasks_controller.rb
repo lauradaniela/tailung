@@ -4,6 +4,10 @@ class TasksController < ApplicationController
     render component: 'tasks/index', props: {tasks: Task.all, notice: notice}
   end
 
+  def show
+    render component: 'tasks/show', props: {tasks: Task.all}
+  end
+
   def new
     render component: 'tasks/new', props: Task.new
   end
